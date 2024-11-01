@@ -30,7 +30,18 @@
     }
 
     /* Main Content Container */
-    .container {
+    .twinkl-container {
+      max-width: 900px;
+      margin: 20px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      width: 95%;
+    }
+    
+    .compliance-container {
       max-width: 900px;
       margin: 20px auto;
       background-color: white;
@@ -57,27 +68,31 @@
     }
     
     h1 {
-        font-family: 'Comfortaa', sans-serif;
+        font-family: 'Avenir', sans-serif;
         font-size: 2.5rem;
         font-weight: 600;
     }
     
     h2 {
-        font-family: 'Comfortaa', sans-serif;
+        font-family: 'Avenir', sans-serif;
         font-size: 2rem;
         font-weight: 600;
-        color:#4B97F2
-
 
     }
     
-    h3 {
+    .twinkl-container h2 {
         font-family: 'Comfortaa', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #4B97F2;
+    }
+    
+    h3 {
+        font-family:  'Avenir', sans-serif;
         font-size: 1.5rem;
-        color:#4B97F2
     }
 
-    h4 {
+    .twinkl-container h4 {
       font-family: 'Comfortaa', cursive;
       font-size: 1.5rem;
       color: #4B97F2;
@@ -159,16 +174,9 @@
       }
       
       h2 {
-          font-family: 'Comfortaa', sans-serif;
           font-size: 1.6rem;
       }
-      
-      h3 {
-        font-family: 'Comfortaa', sans-serif;
-        
-
-      }
-
+     
       h4 {
         font-size: 1.2rem;
       }
@@ -188,7 +196,7 @@
         font-size: 1.8rem;
       }
 
-      .container {
+      .twinkl-container {
         padding: 10px;
       }
 
@@ -217,12 +225,12 @@
   </div>
 
   <!-- Main Content Container -->
-  <div class="container">
+  <div class="twinkl-container">
     <h4>Welcome. We're glad you're here!</h4>
     <p>In order to ensure safe usage across the organisation, we need all team members to confirm they have read and accepted the <b>Safe Usage Policy</b> for Google's Gemini. Once you accept, you will receive an email with a copy of the policy and a link to the Wiki.</p>
+    </div>
     
-    <hr class="rounded">
-    
+    <div class="compliance-container">
     <h1>Risks and Considerations for Using Gemini in Google Meets</h1>
     <h2>Purpose</h2>
     <p>This document outlines the risks and considerations for employees when using Gemini for transcription in Google Meets, ensuring compliance with privacy and data protection standards.</p>
@@ -273,7 +281,10 @@
         <li><strong>Incident Response Plan:</strong> Establish a clear incident response plan for data breaches related to transcription data. This plan should outline how to report a breach, the steps to contain it, and how to communicate with affected individuals.</li>
         <li><strong>Training on Breach Reporting:</strong> Provide training to employees on how to recognize and report potential data breaches involving transcriptions.</li>
     </ul>
-
+    </div>
+    
+    <div class="twinkl-container">
+        
     <h2>Conclusion</h2>
     <p>Using Gemini for Google Meets can enhance meeting productivity and accessibility, but it is essential to remain vigilant about privacy and compliance. By following the outlined procedures and fostering a culture of transparency and respect for privacy, we can leverage this technology responsibly.</p>
 
