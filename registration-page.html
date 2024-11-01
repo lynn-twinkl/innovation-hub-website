@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+  <style>
+
+    body {
+      font-family: 'Avenir', sans-serif;
+      font-size: 16px;
+      background-color: #fafafa;
+      color: #333333;
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .banner {
+      background-color: #4B97F2;
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .banner h1 {
+      font-family: 'Comfortaa', cursive;
+      font-size: 2.75rem;
+      margin: 0;
+      color: white;
+    }
+
+    /* Main Content Container */
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      width: 95%;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+    
+    h1 {
+        font-family: 'Comfortaa', sans-serif;
+        font-size: 2.5rem;
+        color:#4B97F2
+    }
+    
+    h2 {
+        font-family: 'Comfortaa', sans-serif;
+        font-size: 1.8rem;
+        color:#4B97F2
+
+    }
+    
+    h3 {
+        font-family: 'Comfortaa', sans-serif;
+        font-size: 1.5rem;
+        color:#4B97F2
+    }
+
+    h4 {
+      font-family: 'Comfortaa', cursive;
+      font-size: 1.5rem;
+      color: #4B97F2;
+    }
+
+    /* Form Styling */
+    form {
+      margin-top: 20px;
+      display: inline-block;
+      width: 100%;
+    }
+
+    label {
+      font-size: 1rem;
+      color: #333333;
+    }
+
+    input[type="email"],
+    input[type="submit"] {
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      width: 100%; /* Ensures inputs take full width of container */
+      box-sizing: border-box; /* Ensures padding is included in total width */
+    }
+
+    input[type="email"] {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      color: #333333;
+    }
+
+    input[type="submit"] {
+      background-color: #4B97F2;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #357ABD;
+    }
+
+    /* PDF Iframe Container */
+    .pdf-container {
+      margin: 20px 0;
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+
+    /* Response Message Styling */
+    #response {
+      margin-top: 15px;
+      font-size: 1rem;
+      color: #333333;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      /* Reduce padding and font size on smaller screens */
+      .banner h1 {
+        font-size: 2.25rem;
+        padding: 15px;
+      }
+
+      .container {
+        padding: 15px;
+        margin: 10px;
+        width: calc(100% - 20px); /* Full width with slight margins */
+      }
+      
+      h1 {
+          font-size: 2rem;
+          line-height: 1.25;
+      }
+      
+      h2 {
+          font-family: 'Comfortaa', sans-serif;
+          font-size: 1.6rem;
+      }
+      
+      h3 {
+        font-family: 'Comfortaa', sans-serif;
+        
+
+      }
+
+      h4 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      .pdf-container {
+        height: 400px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      /* Further adjustments for small phones */
+      .banner h1 {
+        font-size: 1.8rem;
+      }
+
+      .container {
+        padding: 10px;
+      }
+
+      h4 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.85rem;
+      }
+
+      input[type="submit"],
+      input[type="email"] {
+        font-size: 0.9rem;
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner Section for the Title -->
+  <div class="banner">
+    <h1>Gemini Training Registration
+    </h1>
+  </div>
+
+  <!-- Main Content Container -->
+  <div class="container">
+    <p>In order to ensure safe usage across the organisation, we need all team members to confirm they have read and accepted the <b>Safe Usage Policy</b> for Google's Gemini. Once you accept, you will receive an email with a copy of the policy and a link to the Wiki.</p>
+    
+
+    <h2>Purpose</h2>
+    <p>This document outlines the risks and considerations for employees when using Gemini for transcription in Google Meets, ensuring compliance with privacy and data protection standards.</p>
+
+    <h2>Overview of Gemini</h2>
+    <p>Gemini is a transcription tool integrated with Google Meets that automatically transcribes meetings. While this feature enhances accessibility and documentation, it also raises important privacy and compliance considerations.</p>
+
+    <h2>Key Considerations</h2>
+
+    <h3>1. Identifying Active Transcription</h3>
+    <ul>
+        <li><strong>Notification:</strong> Employees should be aware when transcription is active during a meeting. Users will receive a notification indicating that transcription is in progress.</li>
+        <li><strong>Transparency:</strong> Always inform meeting participants that transcription is enabled, ensuring that all parties are aware their conversations are being recorded.</li>
+    </ul>
+
+    <h3>2. Right to Request Deletion</h3>
+    <ul>
+        <li><strong>Employee Rights:</strong> Employees have the right to request the deletion of any transcription created from a meeting.</li>
+        <li><strong>Procedure:</strong> To request deletion, employees should contact their manager or the designated compliance officer. A formal request should include:
+            <ul>
+                <li>Date and time of the meeting</li>
+                <li>Participants involved</li>
+                <li>Reason for the deletion request</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>3. Obligation to Delete Transcriptions</h3>
+    <ul>
+        <li><strong>Mandatory Compliance:</strong> If an employee requests the deletion of a transcription, the responsible party (e.g., meeting host) must ensure that the transcription is deleted promptly.</li>
+        <li><strong>Documentation:</strong> Keep a record of all deletion requests and actions taken in response for compliance purposes.</li>
+    </ul>
+
+    <h3>4. Data Privacy Risks</h3>
+    <ul>
+        <li><strong>Sensitive Information:</strong> Be cautious about discussing sensitive or confidential information during meetings, as transcriptions may inadvertently capture such data.</li>
+        <li><strong>Data Breaches:</strong> Protect against unauthorized access to transcriptions to prevent potential data breaches. Ensure that only authorized personnel have access to stored transcriptions.</li>
+    </ul>
+
+    <h3>5. Training and Awareness</h3>
+    <ul>
+        <li><strong>Employee Training:</strong> Regular training sessions should be held to ensure employees understand how to use Gemini, the implications of transcription, and their rights and responsibilities.</li>
+        <li><strong>Policy Review:</strong> Regularly review compliance policies and update employees on any changes related to the use of transcription tools.</li>
+    </ul>
+
+    <h3>6. Handling Breaches or Incidents</h3>
+    <ul>
+        <li><strong>Incident Response Plan:</strong> Establish a clear incident response plan for data breaches related to transcription data. This plan should outline how to report a breach, the steps to contain it, and how to communicate with affected individuals.</li>
+        <li><strong>Training on Breach Reporting:</strong> Provide training to employees on how to recognize and report potential data breaches involving transcriptions.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>Using Gemini for Google Meets can enhance meeting productivity and accessibility, but it is essential to remain vigilant about privacy and compliance. By following the outlined procedures and fostering a culture of transparency and respect for privacy, we can leverage this technology responsibly.</p>
+
+    <!-- Form for Email Submission -->
+    <form id="emailForm">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <input type="submit" value="Submit">
+    </form>
+
+    <!-- Response Message Display -->
+    <div id="response"></div>
+  </div>
+
+  <!-- JavaScript for Form Submission -->
+  <script>
+    document.getElementById('emailForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+      const email = document.getElementById('email').value;
+      
+      if (!email) {
+        document.getElementById('response').innerHTML = "Please enter a valid email.";
+        return; // Exit the function if email is empty
+      }
+      
+      google.script.run.withSuccessHandler(function(response) {
+        document.getElementById('response').innerHTML = response;
+      }).submitEmail(email);
+    });
+  </script>
+</body>
+</html>
+
