@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Raleway:wght@400&display=swap" rel="stylesheet">
   <style>
 
     body {
@@ -26,6 +26,7 @@
       font-size: 2.75rem;
       margin: 0;
       color: white;
+      font-weight: 500;
     }
 
     /* Main Content Container */
@@ -33,12 +34,20 @@
       max-width: 900px;
       margin: 20px auto;
       background-color: white;
-      padding: 20px;
+      padding: 30px;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       box-sizing: border-box;
       width: 95%;
     }
+    
+    hr.rounded {
+        border-top: 1.5px solid #bbb;
+        border-radius: 5px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+}
+
 
     p {
       margin-bottom: 1rem;
@@ -50,13 +59,15 @@
     h1 {
         font-family: 'Comfortaa', sans-serif;
         font-size: 2.5rem;
-        color:#4B97F2
+        font-weight: 600;
     }
     
     h2 {
         font-family: 'Comfortaa', sans-serif;
-        font-size: 1.8rem;
+        font-size: 2rem;
+        font-weight: 600;
         color:#4B97F2
+
 
     }
     
@@ -136,7 +147,8 @@
       }
 
       .container {
-        padding: 15px;
+        padding-top: 15px !important;
+        padding: 30px;
         margin: 10px;
         width: calc(100% - 20px); /* Full width with slight margins */
       }
@@ -206,9 +218,12 @@
 
   <!-- Main Content Container -->
   <div class="container">
+    <h4>Welcome. We're glad you're here!</h4>
     <p>In order to ensure safe usage across the organisation, we need all team members to confirm they have read and accepted the <b>Safe Usage Policy</b> for Google's Gemini. Once you accept, you will receive an email with a copy of the policy and a link to the Wiki.</p>
     
-
+    <hr class="rounded">
+    
+    <h1>Risks and Considerations for Using Gemini in Google Meets</h1>
     <h2>Purpose</h2>
     <p>This document outlines the risks and considerations for employees when using Gemini for transcription in Google Meets, ensuring compliance with privacy and data protection standards.</p>
 
