@@ -1,19 +1,25 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0.1 Safari/605.1.15" version="24.8.3">
   <diagram name="Page-1" id="ZSEqXpm7zEi85FjgitcW">
-    <mxGraphModel dx="837" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="822" dy="518" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="InnFcrdfFy9e5PUdxPg--1" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Gemini Rollout: Training &amp;amp; Development Cycle&lt;/font&gt;" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=20;horizontalStack=0;html=1;fontFamily=Outfit;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOutfit;spacingTop=4;spacing=8;spacingBottom=5;" vertex="1" parent="1">
+        <mxCell id="InnFcrdfFy9e5PUdxPg--1" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Gemini Rollout: Training &amp;amp; Development Cycle&lt;/font&gt;" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=20;horizontalStack=0;html=1;fontFamily=Outfit;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOutfit;spacingTop=4;spacing=8;spacingBottom=5;" parent="1" vertex="1">
           <mxGeometry x="40" y="170" width="790" height="380" as="geometry" />
         </mxCell>
-        <mxCell id="InnFcrdfFy9e5PUdxPg--2" value="IC" style="swimlane;startSize=20;horizontal=0;html=1;" vertex="1" parent="InnFcrdfFy9e5PUdxPg--1">
+        <mxCell id="InnFcrdfFy9e5PUdxPg--2" value="IC" style="swimlane;startSize=20;horizontal=0;html=1;" parent="InnFcrdfFy9e5PUdxPg--1" vertex="1">
           <mxGeometry y="20" width="790" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="InnFcrdfFy9e5PUdxPg--4" value="Consent Page" style="swimlane;startSize=20;horizontal=0;html=1;" vertex="1" parent="InnFcrdfFy9e5PUdxPg--1">
+        <mxCell id="gN_W0Z1Zmv7aAQRt5xlA-1" value="Send mass Announcement" style="strokeWidth=1.5;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;spacing=8;" vertex="1" parent="InnFcrdfFy9e5PUdxPg--2">
+          <mxGeometry x="40" y="25" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="InnFcrdfFy9e5PUdxPg--4" value="Consent Page" style="swimlane;startSize=20;horizontal=0;html=1;" parent="InnFcrdfFy9e5PUdxPg--1" vertex="1">
           <mxGeometry y="140" width="790" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="InnFcrdfFy9e5PUdxPg--6" value="Email" style="swimlane;startSize=20;horizontal=0;html=1;" vertex="1" parent="InnFcrdfFy9e5PUdxPg--1">
+        <mxCell id="gN_W0Z1Zmv7aAQRt5xlA-3" value="Meets Safe Usage Policy Consent Confirmation" style="strokeWidth=1.5;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;align=left;spacing=8;" vertex="1" parent="InnFcrdfFy9e5PUdxPg--4">
+          <mxGeometry x="180" y="20" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="InnFcrdfFy9e5PUdxPg--6" value="Email" style="swimlane;startSize=20;horizontal=0;html=1;" parent="InnFcrdfFy9e5PUdxPg--1" vertex="1">
           <mxGeometry y="260" width="790" height="120" as="geometry" />
         </mxCell>
       </root>
