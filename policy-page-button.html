@@ -2,16 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Rainbow Swipe Button</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
-
-        body {
-            height: auto;
-            overflow: hidden;
+        
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            position: fixed;
         }
-
+    
+        .button-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            touch-action: none;
+            padding: 0 8px;
+            box-sizing: border-box;
+        }
+        
+        .button-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
         .rainbow-button {
             font-family: 'Outfit', sans-serif;
             font-size: 20px;
@@ -29,38 +49,46 @@
             width: 100%;
             box-sizing: border-box;
             transition: color 0.3s ease;
+            -webkit-tap-highlight-color: transparent;
         }
-
+        
         .rainbow-button:hover {
             color: transparent;
         }
-
+        
         .rainbow-button span {
             position: relative;
             z-index: 1;
             transition: background-image 0.3s ease, color 0.3s ease;
+            -webkit-background-clip: text;
         }
-
-
+        
         .rainbow-button:hover span {
             background-image: linear-gradient(90deg, #ff6ec4, #7873f5, #2C74E8, #2af598);
+            -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
         }
-
+        
         @media (max-width: 767px) {
             .rainbow-button {
                 font-size: 16px;
+                width: 100%;
+            }
+            
+            .button-wrapper {
+                width: 100%;
             }
         }
-
     </style>
 </head>
 <body>
-
-    <a href="https://sites.google.com/twinkl.com/ai-wiki/safe-ai-for-google-meet" class="rainbow-button">
-        <span>Read our Safe AI Usage Policy</span>
-    </a>
-
+    <div class="button-container">
+        <div class="button-wrapper">
+            <a href="https://sites.google.com/twinkl.com/ai-wiki/safe-ai-for-google-meet" class="rainbow-button" target="_blank">
+                <span>Read our Safe AI Usage Policy</span>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
