@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Basic Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      html,
+      body {
+        font-family: "Outfit", sans-serif;
+        overflow-x: hidden;
+        height: 100%;
+      }
+
+      /* Animated Gradient Background */
+      
+    .gradient-background {
+        background: linear-gradient(258deg,#6358f4,#8ac8fc,#21e49b,#75ef5d);
+        background-size: 240% 240%;
+        animation: gradient-animation 26s ease infinite;
+      }
+
+    @keyframes gradient-animation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+      /* Hero Section (first block) */
+      .hero {
+        height: 100vh; /* Full viewport height */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+      }
+
+      .hero h1 {
+        font-size: 6.5vh;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 20px;
+      }
+      
+      .hero h3 {
+        font-size: 2.8vh;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      /* Translucent scroll message with subtle animation */
+      .scroll-down {
+        position: absolute;
+        bottom: 80px;
+        font-size: 2.5vh;
+        color: rgba(255, 255, 255, 0.7);
+        animation: float 2s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+      }
+
+      /* Content Section (iframe block) */
+      .content {
+        height: 100vh; /* Full viewport height */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+      }
+
+      .content iframe {
+        width: 90vw;
+        height: 92vh; /* Adjust as needed */
+        border: none;
+      }
+
+      /* Responsive Adjustments */
+      @media (max-width: 480px) {
+        .hero h1 {
+          font-size: 12vh;
+        }
+        .scroll-down {
+          font-size: 4vh;
+        }
+        .content iframe {
+          height: 100vh;
+        }
+      }
+    </style>
+  </head>
+  <!-- Added the "gradient-background" class to the body -->
+  <body class="gradient-background">
+    <!-- Hero Section: title and scroll message -->
+    <section class="hero">
+      <h1>The Academy</h1>
+      <h3>Our hub of innovation resources any team can leverage to elevate their creative workflows</h3>
+      <div class="scroll-down">scroll down</div>
+    </section>
+
+    <!-- Content Section: iframe -->
+    <section class="content">
+      <iframe
+        src="https://airtable.com/embed/apptD4d80ll3KNi8p/shr5ITjIuX4Dd02Qw?viewControls=on"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </section>
+  </body>
+</html>
