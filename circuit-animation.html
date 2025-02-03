@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tron Style 3D Octahedron</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #0C102A; /* Dark Blue background */
+            overflow: hidden;
+        }
+
+        .scene {
+            width: 300px;
+            height: 300px;
+            perspective: 1000px; /* Depth for 3D effect */
+        }
+
+        .octahedron {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            animation: rotateOctahedron 5s infinite linear;
+        }
+
+        /* Creating the 8 faces of the octahedron */
+        .face {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(44, 116, 232, 0.8);
+            border: 2px solid rgba(135, 114, 191, 0.7); /* Light purple border */
+            box-shadow: 0 0 15px rgba(44, 116, 232, 0.8);
+            transform-origin: center;
+        }
+
+        /* Top pyramid face */
+        .face1 { transform: rotateX(60deg) translateZ(100px); }
+        /* Bottom pyramid face */
+        .face2 { transform: rotateX(-60deg) translateZ(100px); }
+        /* Front pyramid face */
+        .face3 { transform: rotateY(45deg) rotateX(60deg) translateZ(100px); }
+        /* Back pyramid face */
+        .face4 { transform: rotateY(-45deg) rotateX(-60deg) translateZ(100px); }
+        /* Right pyramid face */
+        .face5 { transform: rotateY(135deg) rotateX(60deg) translateZ(100px); }
+        /* Left pyramid face */
+        .face6 { transform: rotateY(-135deg) rotateX(-60deg) translateZ(100px); }
+        /* Top flat side */
+        .face7 { transform: rotateX(90deg) translateZ(100px); }
+        /* Bottom flat side */
+        .face8 { transform: rotateX(-90deg) translateZ(100px); }
+
+        /* Animation for continuous rotation */
+        @keyframes rotateOctahedron {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="scene">
+        <div class="octahedron">
+            <div class="face face1"></div>
+            <div class="face face2"></div>
+            <div class="face face3"></div>
+            <div class="face face4"></div>
+            <div class="face face5"></div>
+            <div class="face face6"></div>
+            <div class="face face7"></div>
+            <div class="face face8"></div>
+        </div>
+    </div>
+
+</body>
+</html>
+
