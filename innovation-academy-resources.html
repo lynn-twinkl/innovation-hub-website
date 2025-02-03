@@ -2,14 +2,17 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <!-- Make it mobile-friendly -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Prevent iOS from auto-detecting numbers -->
     <meta name="format-detection" content="telephone=no" />
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <style>
-      /* Basic Reset */
+      /* Basic reset */
       * {
         margin: 0;
         padding: 0;
@@ -17,22 +20,22 @@
         -webkit-text-size-adjust: 100%;
       }
 
-      /* Apply the background to the whole page */
+      /* Body & background */
       html,
       body {
         font-family: "Outfit", sans-serif;
-        background-color:#a399ff;
+        background-color: #a399ff;
         background-image:
-        radial-gradient(at 41% 12%, hsla(244,89%,64%,1) 0px, transparent 50%),
-        radial-gradient(at 17% 40%, hsla(215,76%,74%,1) 0px, transparent 50%),
-        radial-gradient(at 11% 10%, hsla(103,97%,73%,1) 0px, transparent 50%),
-        radial-gradient(at 89% 49%, hsla(167,74%,60%,1) 0px, transparent 50%),
-        radial-gradient(at 75% 34%, hsla(186,91%,63%,1) 0px, transparent 50%);
+          radial-gradient(at 41% 12%, hsla(244,89%,64%,1) 0px, transparent 50%),
+          radial-gradient(at 17% 40%, hsla(215,76%,74%,1) 0px, transparent 50%),
+          radial-gradient(at 11% 10%, hsla(103,97%,73%,1) 0px, transparent 50%),
+          radial-gradient(at 89% 49%, hsla(167,74%,60%,1) 0px, transparent 50%),
+          radial-gradient(at 75% 34%, hsla(186,91%,63%,1) 0px, transparent 50%);
       }
 
-      /* Hero Section (first block) */
+      /* Hero Section */
       .hero {
-        height: 100vh; /* Full viewport height */
+        height: 100vh;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -40,27 +43,28 @@
         align-items: center;
         text-align: center;
         position: relative;
+        padding: 0 2rem;
       }
 
       .hero h1 {
-        font-size: 6.5vh;
+        font-size: clamp(2.6rem, 6vw, 3rem);
         font-weight: 600;
         color: rgba(255, 255, 255, 0.9);
-        margin-bottom: 20px;
-      }
-      
-      .hero h3 {
-          font-size: 2.8vh;
-          font-weight: 300;
-          width: 50%;
-          color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 1.5rem;
       }
 
-          /* Translucent scroll message with subtle animation */
+      .hero h3 {
+        font-size: clamp(1.15rem, 3vw, 1.2rem);
+        font-weight: 300;
+        color: rgba(255, 255, 255, 1);
+        max-width: 50ch; /* optional max width */
+        margin: 0 auto;
+      }
+
       .scroll-down {
         position: absolute;
-        bottom: 80px;
-        font-size: 2.5vh;
+        bottom: 10%;
+        font-size: 1.2rem;
         color: rgba(255, 255, 255, 0.7);
         animation: float 2s ease-in-out infinite;
       }
@@ -74,52 +78,85 @@
         }
       }
 
-      /* Content Section (iframe block) */
+      /* Button shown ONLY on mobile */
+      .mobile-cta {
+        font-family: "Outfit", sans-serif;
+        display: none;
+        background: rgba(255, 255, 255, 1);
+        color: #444;
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+      .mobile-cta:hover {
+        background: rgba(255, 255, 255, 0.8);
+      }
+
+      /* Iframe Content Section */
       .content {
-        height: 100vh; /* Full viewport height */
+        height: 100vh; 
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        background: transparent;
       }
-
       .content iframe {
         width: 90vw;
-        height: 92vh; /* Adjust as needed */
+        height: 90vh;
         border: none;
       }
 
-      /* Responsive Adjustments */
+      /* ----------------------------------
+         Mobile Styles (max-width: 480px)
+         ---------------------------------- */
       @media (max-width: 480px) {
-        .hero h1 {
-          font-size: 12vh;
+
+        /* Hide scroll-down & embedded Airtable on mobile */
+        .scroll-down,
+        .content {
+          display: none;
         }
-        .scroll-down {
-          font-size: 4vh;
+        
+        .hero {
+        height: calc(var(--vh, 1vh) * 100);;
+
+        .mobile-cta {
+          display: inline-block;
+          position: absolute;
+          bottom: 20%;
         }
-        .content iframe {
-          height: 100vh;
-        }
+        
+        .content h3 {
       }
     </style>
   </head>
   <body>
-    <!-- Hero Section: title and scroll message -->
+    <!-- Hero Section -->
     <section class="hero">
       <h1>The Academy</h1>
-      <h3>A curated list of resources any team can leverage for customer research, ideation, and concept development</h3>
+      <h3>
+        A curated list of resources any team can leverage for customer research,
+        ideation, and concept development
+      </h3>
+
+      <!-- Visible on desktop/tablet only -->
       <div class="scroll-down">scroll down</div>
+
+      <!-- Visible on mobile only -->
+      <button class="mobile-cta" onclick="window.open('https://airtable.com/appY4rs5ABWzcosW1/shrcbN0ioBZEzAGhQ', '_blank')">
+        View resources
+      </button>
     </section>
 
-    <!-- Content Section: iframe -->
+    <!-- Content Section: (hidden on mobile) -->
     <section class="content">
       <iframe
-        src="https://airtable.com/embed/apptD4d80ll3KNi8p/shr5ITjIuX4Dd02Qw?viewControls=on"
+        src="https://airtable.com/embed/appY4rs5ABWzcosW1/shrcbN0ioBZEzAGhQ?viewControls=on"
         frameborder="0"
-        allowfullscreen>
-      </iframe>
+        allowfullscreen
+      ></iframe>
     </section>
   </body>
 </html>
-
