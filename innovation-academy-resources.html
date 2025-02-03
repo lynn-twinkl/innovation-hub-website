@@ -17,32 +17,18 @@
         -webkit-text-size-adjust: 100%;
       }
 
+      /* Apply the background to the whole page */
       html,
       body {
         font-family: "Outfit", sans-serif;
-        overflow-x: hidden;
-        height: 100%;
+        background-color:#a399ff;
+        background-image:
+        radial-gradient(at 41% 12%, hsla(244,89%,64%,1) 0px, transparent 50%),
+        radial-gradient(at 17% 40%, hsla(215,76%,74%,1) 0px, transparent 50%),
+        radial-gradient(at 11% 10%, hsla(103,97%,73%,1) 0px, transparent 50%),
+        radial-gradient(at 89% 49%, hsla(167,74%,60%,1) 0px, transparent 50%),
+        radial-gradient(at 75% 34%, hsla(186,91%,63%,1) 0px, transparent 50%);
       }
-
-      /* Animated Gradient Background */
-      
-    .gradient-background {
-        background: linear-gradient(258deg,#6358f4,#8ac8fc,#21e49b);
-        background-size: 240% 240%;
-        animation: gradient-animation 26s ease infinite;
-      }
-
-    @keyframes gradient-animation {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
 
       /* Hero Section (first block) */
       .hero {
@@ -64,12 +50,13 @@
       }
       
       .hero h3 {
-        font-size: 2.8vh;
-        font-weight: 300;
-        color: rgba(255, 255, 255, 0.9);
+          font-size: 2.8vh;
+          font-weight: 300;
+          width: 50%;
+          color: rgba(255, 255, 255, 0.9);
       }
 
-      /* Translucent scroll message with subtle animation */
+          /* Translucent scroll message with subtle animation */
       .scroll-down {
         position: absolute;
         bottom: 80px;
@@ -117,8 +104,7 @@
       }
     </style>
   </head>
-  <!-- Added the "gradient-background" class to the body -->
-  <body class="gradient-background">
+  <body>
     <!-- Hero Section: title and scroll message -->
     <section class="hero">
       <h1>The Academy</h1>
@@ -136,3 +122,4 @@
     </section>
   </body>
 </html>
+
